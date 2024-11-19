@@ -1,0 +1,50 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+
+  &__page,
+  &__arrow {
+    background-color: var(--c-pagination);
+    border: 1px solid var(--c-border);
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+
+    width: 25px;
+    height: 24px;
+  }
+
+  &__icon-arrow {
+    width: 6px;
+    height: 10px;
+  }
+
+  &__arrow#prev {
+    transform: rotate(180deg);
+  }
+
+  &__page.active {
+    background-color: var(--c-blue);
+    border-color: var(--c-blue);
+    color: white;
+    font-weight: bold;
+  }
+
+  &__dots {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+.pagination-mobile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 100px;
+}

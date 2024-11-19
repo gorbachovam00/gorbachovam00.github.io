@@ -1,0 +1,43 @@
+.content {
+  &__search-container {
+    position: absolute;
+    right: 53px;
+    top: 44px;
+  }
+
+  &__search-container-mobile {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+
+    @media (min-width: 576px) {
+      right: 50px;
+      top: 190px;
+    }
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+}
+
+.search-input {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--c-background);
+  padding: 10px 14px 10px 40px;
+
+  &::placeholder {
+    color: var(--c-th);
+  }
+}
+
+.mobile-input {
+  background-color: var(--c-white);
+}
+
+.icon-search {
+  position: absolute;
+  left: 8px;
+  bottom: 7px;
+}

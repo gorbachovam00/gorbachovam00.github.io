@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/sidebar.js" defer></script>
+    <script src="./scripts/burger-menu.js" defer></script>
+    <script src="./scripts/pagination-active.js" defer></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__burger">
+        <a href="javascript:void(0)" id="burger-toggle">
+          <img
+            src="./img/icons/icon-burger-menu-2x.png"
+            class="header__burger-icon"
+            alt="burger menu"
+          />
+        </a>
+      </div>
+    </header>
+    <aside class="sidebar" id="burger-menu">
+      <div class="sidebar__close-icon">
+        <a href="javascript:void(0)" id="icon-close">
+          <img
+            src="./img/icons/icon-close-2x.png"
+            class="sidebar__icon-close"
+            alt="burger menu"
+          />
+        </a>
+      </div>
+      <div class="sidebar__grid-mobile">
+        <div class="sidebar__container">
+          <div class="sidebar__logo">
+            <a href="#" class="sidebar__logo-link">
+              <img
+                src="img/icons/logo.png"
+                alt="logo Dashboard"
+                class="sidebar__logo-img"
+              />
+              Dashboard <span class="sidebar__logo-version">v.01</span>
+            </a>
+          </div>
+          <div class="sidebar__menu">
+            <ul class="sidebar__menu-list">
+              <li class="sidebar__menu-item">
+                <div class="sidebar__menu-item-name">
+                  <img
+                    src="./img/icons/key-square.svg"
+                    alt="icon key"
+                    class="sidebar__menu-icon"
+                  />
+                  <p class="sidebar__menu-text">Dashboard</p>
+                </div>
+              </li>
+              <li class="sidebar__menu-item">
+                <div class="sidebar__menu-item-name">
+                  <img
+                    src="./img/icons/icon-square.svg"
+                    alt="icon square"
+                    class="sidebar__menu-icon"
+                  />
+                  <p class="sidebar__menu-text">Product</p>
+                </div>
+
+                <img
+                  src="./img/icons/icon-arrow-right.svg"
+                  alt="icon arrow right"
+                  class="sidebar__menu-icon"
+                />
+              </li>
+              <li class="sidebar__menu-item">
+                <div class="sidebar__menu-item-name">
+                  <img
+                    src="./img/icons/icon-customer.svg"
+                    alt="icon customer"
+                    class="sidebar__menu-icon sidebar__menu-icon-customer"
+                  />
+
+                  <p class="sidebar__menu-text">Customers</p>
+                </div>
+
+                <img
+                  src="./img/icons/icon-arrow-right.svg"
+                  alt="icon arrow right"
+                  class="sidebar__menu-icon"
+                />
+              </li>
+              <li class="sidebar__menu-item">
+                <div class="sidebar__menu-item-name">
+                  <img
+                    src="./img/icons/icon-wallet.svg"
+                    alt="icon wallet"
+                    class="sidebar__menu-icon"
+                  />
+                  <p class="sidebar__menu-text">Income</p>
+                </div>
+
+                <img
+                  src="./img/icons/icon-arrow-right.svg"
+                  alt="icon arrow right"
+                  class="sidebar__menu-icon"
+                />
+              </li>
+              <li class="sidebar__menu-item">
+                <div class="sidebar__menu-item-name">
+                  <img
+                    src="./img/icons/icon-discaunt.svg"
+                    alt="icon discount"
+                    class="sidebar__menu-icon"
+                  />
+
+                  <p class="sidebar__menu-text">Promote</p>
+                </div>
+
+                <img
+                  src="./img/icons/icon-arrow-right.svg"
+                  alt="icon arrow right"
+                  class="sidebar__menu-icon"
+                />
+              </li>
+              <li class="sidebar__menu-item">
+                <div class="sidebar__menu-item-name">
+                  <img
+                    src="./img/icons/icon-question.svg"
+                    alt="icon question"
+                    class="sidebar__menu-icon"
+                  />
+
+                  <p class="sidebar__menu-text">Help</p>
+                </div>
+
+                <img
+                  src="./img/icons/icon-arrow-right.svg"
+                  alt="icon arrow right"
+                  class="sidebar__menu-icon"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebar__customer">
+          <img
+            src="./img/icons/icon-manager.png"
+            alt="icon Project Manager"
+            class="sidebar__customer-icon"
+          />
+          <div class="sidebar__customer-info">
+            <p class="sidebar__customer-name">Evano</p>
+            <p class="sidebar__customer-role">Project Manager</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="page__main">
+      <div class="container">
+        <div class="content">
+          <h1 class="content__title">Hello Evano👋,</h1>
+
+          <div class="content__customers">
+            <h2 class="content__caption content__caption-customer">
+              All Customers
+            </h2>
+            <p class="content__caption content__caption-status">
+              Active Members
+            </p>
+
+            <div class="content__search-container">
+              <input
+                type="search"
+                id="search"
+                class="search-input"
+                placeholder="Search"
+              />
+              <img
+                src="./img/icons/icon-search.svg"
+                alt="icon search"
+                class="icon-search"
+              />
+            </div>
+
+            <div class="content__table-container">
+              <table class="content__table">
+                <thead>
+                  <tr class="content__head-row">
+                    <th class="content__head-title">Customer Name</th>
+                    <th class="content__head-title">Company</th>
+                    <th class="content__head-title">Phone Number</th>
+                    <th class="content__head-title">Email</th>
+                    <th class="content__head-title">Country</th>
+                    <th class="content__head-title">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="content__table-body">
+                  <tr class="content__table-row">
+                    <td data-label="Customer Name" class="content__table-cell">
+                      Jane Cooper
+                    </td>
+                    <td data-label="Company" class="content__table-cell">
+                      Microsoft
+                    </td>
+                    <td data-label="Phone Number" class="content__table-cell">
+                      (225) 555-0118
+                    </td>
+                    <td data-label="Email" class="content__table-cell">
+                      jane@microsoft.com
+                    </td>
+                    <td data-label="Country" class="content__table-cell">
+                      United States
+                    </td>
+                    <td
+                      data-label="Status"
+                      class="content__status content__status-active content__table-cell"
+                    >
+                      Active
+                    </td>
+                  </tr>
+                  <tr class="table__table-row">
+                    <td data-label="Customer Name" class="content__table-cell">
+                      Floyd Miles
+                    </td>
+                    <td data-label="Company" class="content__table-cell">
+                      Yahoo
+                    </td>
+                    <td data-label="Phone Number" class="content__table-cell">
+                      (205) 555-0100
+                    </td>
+                    <td data-label="Email" class="content__table-cell">
+                      floyd@yahoo.com
+                    </td>
+                    <td data-label="Country" class="content__table-cell">
+                      Kiribati
+                    </td>
+                    <td
+                      data-label="Status"
+                      class="content__status content__status-inactive content__table-cell"
+                    >
+                      Inactive
+                    </td>
+                  </tr>
+                  <tr class="table__table-row">
+                    <td data-label="Customer Name" class="content__table-cell">
+                      Ronald Richards
+                    </td>
+                    <td data-label="Company" class="content__table-cell">
+                      Adobe
+                    </td>
+                    <td data-label="Phone Number" class="content__table-cell">
+                      Adobe
+                    </td>
+                    <td data-label="Email" class="content__table-cell">
+                      ronald@adobe.com
+                    </td>
+                    <td data-label="Country" class="content__table-cell">
+                      Israel
+                    </td>
+                    <td
+                      data-label="Status"
+                      class="content__status content__status-inactive content__table-cell"
+                    >
+                      Inactive
+                    </td>
+                  </tr>
+                  <tr class="table__table-row">
+                    <td data-label="Customer Name" class="content__table-cell">
+                      Marvin McKinney
+                    </td>
+                    <td data-label="Company" class="content__table-cell">
+                      Tesla
+                    </td>
+                    <td data-label="Phone Number" class="content__table-cell">
+                      (252) 555-0126
+                    </td>
+                    <td data-label="Email" class="content__table-cell">
+                      marvin@tesla.com
+                    </td>
+                    <td data-label="Country" class="content__table-cell">
+                      Iran
+                    </td>
+                    <td
+                      data-label="Status"
+                      class="content__status content__status-active content__table-cell"
+                    >
+                      Active
+                    </td>
+                  </tr>
+                  <tr class="table__table-row">
+                    <td data-label="Customer Name" class="content__table-cell">
+                      Jerome Bell
+                    </td>
+                    <td data-label="Company" class="content__table-cell">
+                      Google
+                    </td>
+                    <td data-label="Phone Number" class="content__table-cell">
+                      (629) 555-0129
+                    </td>
+                    <td data-label="Email" class="content__table-cell">
+                      jerome@google.com
+                    </td>
+                    <td data-label="Country" class="content__table-cell">
+                      Réunion
+                    </td>
+                    <td
+                      data-label="Status"
+                      class="content__status content__status-active content__table-cell"
+                    >
+                      Active
+                    </td>
+                  </tr>
+                  <tr class="table__table-row">
+                    <td data-label="Customer Name" class="content__table-cell">
+                      Kathryn Murphy
+                    </td>
+                    <td data-label="Company" class="content__table-cell">
+                      Microsoft
+                    </td>
+                    <td data-label="Phone Number" class="content__table-cell">
+                      (406) 555-0120
+                    </td>
+                    <td data-label="Email" class="content__table-cell">
+                      kathryn@microsoft.com
+                    </td>
+                    <td data-label="Country" class="content__table-cell">
+                      Curaçao
+                    </td>
+                    <td
+                      data-label="Status"
+                      class="content__status content__status-active content__table-cell"
+                    >
+                      Active
+                    </td>
+                  </tr>
+                  <tr class="table__table-row">
+                    <td data-label="Customer Name" class="content__table-cell">
+                      Jacob Jones
+                    </td>
+                    <td data-label="Company" class="content__table-cell">
+                      Yahoo
+                    </td>
+                    <td data-label="Phone Number" class="content__table-cell">
+                      (208) 555-0112
+                    </td>
+                    <td data-label="Email" class="content__table-cell">
+                      jacob@yahoo.com
+                    </td>
+                    <td data-label="Country" class="content__table-cell">
+                      Brazil
+                    </td>
+                    <td
+                      data-label="Status"
+                      class="content__status content__status-active content__table-cell"
+                    >
+                      Active
+                    </td>
+                  </tr>
+                  <tr class="table__table-row">
+                    <td data-label="Customer Name" class="content__table-cell">
+                      Kristin Watson
+                    </td>
+                    <td data-label="Company" class="content__table-cell">
+                      Facebook
+                    </td>
+                    <td data-label="Phone Number" class="content__table-cell">
+                      (704) 555-0127
+                    </td>
+                    <td data-label="Email" class="content__table-cell">
+                      kristin@facebook.com
+                    </td>
+                    <td data-label="Country" class="content__table-cell">
+                      Åland Islands
+                    </td>
+                    <td
+                      data-label="Status"
+                      class="content__status content__status-inactive content__table-cell"
+                    >
+                      Inactive
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="content__datas">Showing data 1 to 8 of 256K entries</p>
+
+            <div class="pagination">
+              <button
+                class="pagination__arrow"
+                id="prev"
+                onclick="prevPage()"
+                type="button"
+              >
+                <img
+                  src="./img/icons/arrow-next.svg"
+                  alt="icon arrow prev"
+                  class="pagination__icon-arrow"
+                />
+              </button>
+              <button
+                class="pagination__page"
+                onclick="goToPage(1)"
+                type="button"
+              >
+                1
+              </button>
+              <button
+                class="pagination__page"
+                onclick="goToPage(2)"
+                type="button"
+              >
+                2
+              </button>
+              <button
+                class="pagination__page"
+                onclick="goToPage(3)"
+                type="button"
+              >
+                3
+              </button>
+              <button
+                class="pagination__page"
+                onclick="goToPage(4)"
+                type="button"
+              >
+                4
+              </button>
+              <span class="pagination__dots">...</span>
+              <button
+                class="pagination__page"
+                onclick="goToPage(40)"
+                type="button"
+              >
+                40
+              </button>
+              <button
+                class="pagination__arrow"
+                id="next"
+                onclick="nextPage()"
+                type="button"
+              >
+                <img
+                  src="./img/icons/arrow-next.svg"
+                  alt="icon arrow next"
+                  class="pagination__icon-arrow"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="content__mobile-customers">
+            <h2 class="content__caption content__caption-customer">
+              All Customers
+            </h2>
+            <p class="content__caption content__caption-status">
+              Active Members
+            </p>
+
+            <div class="content__search-container-mobile">
+              <input
+                type="search"
+                id="mobile-search"
+                class="search-input mobile-input"
+                placeholder="Search"
+              />
+              <img
+                src="./img/icons/icon-search.svg"
+                alt="icon search"
+                class="icon-search"
+              />
+            </div>
+
+            <ul class="content__mobile-list">
+              <li class="content__mobile-items">
+                <article>
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Customer Name:</p>
+                    <p class="content__mobile-info">Jane Cooper</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Company:</p>
+                    <p class="content__mobile-info">Microsoft</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Phone Number:</p>
+                    <p class="content__mobile-info">(225) 555-0118</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Email:</p>
+                    <p class="content__mobile-info">jane@microsoft.com</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Country:</p>
+                    <p class="content__mobile-info">United States</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Status:</p>
+                    <p class="content__mobile-info">Active</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="content__mobile-items">
+                <article>
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Customer Name:</p>
+                    <p class="content__mobile-info">Floyd Miles</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Company:</p>
+                    <p class="content__mobile-info">Yahoo</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Phone Number:</p>
+                    <p class="content__mobile-info">(205) 555-0100</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Email:</p>
+                    <p class="content__mobile-info">floyd@yahoo.com</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Country:</p>
+                    <p class="content__mobile-info">Kiribati</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Status:</p>
+                    <p class="content__mobile-info">Inactive</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="content__mobile-items">
+                <article>
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-info">Customer Name:</p>
+                    <p class="content__mobile-info">Ronald Richards</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Phone Number:</p>
+                    <p class="content__mobile-info">Adobe</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Email:</p>
+                    <p class="content__mobile-info">ronald@adobe.com</p>
+                  </div>
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Country:</p>
+                    <p class="content__mobile-info">Israel</p>
+                  </div>
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Status:</p>
+                    <p class="content__mobile-info">Inactive</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="content__mobile-items">
+                <article>
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Customer Name:</p>
+                    <p class="content__mobile-info">Marvin McKinney</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Company:</p>
+                    <p class="content__mobile-info">Tesla</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Phone Number:</p>
+                    <p class="content__mobile-info">(252) 555-0126</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Email:</p>
+                    <p class="content__mobile-info">marvin@tesla.com</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Country:</p>
+                    <p class="content__mobile-info">Iran</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Status:</p>
+                    <p class="content__mobile-info">Active</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="content__mobile-items">
+                <article>
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Customer Name:</p>
+                    <p class="content__mobile-info">Jerome Bell</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Company:</p>
+                    <p class="content__mobile-info">Google</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Phone Number:</p>
+                    <p class="content__mobile-info">(629) 555-0129</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Email:</p>
+                    <p class="content__mobile-info">jerome@google.com</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Country:</p>
+                    <p class="content__mobile-info">Réunion</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Status:</p>
+                    <p class="content__mobile-info">Active</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="content__mobile-items">
+                <article>
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Customer Name:</p>
+                    <p class="content__mobile-info">Kathryn Murphy</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Company:</p>
+                    <p class="content__mobile-info">Microsoft</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Phone Number:</p>
+                    <p class="content__mobile-info">(406) 555-0120</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Email:</p>
+                    <p class="content__mobile-info">kathryn@microsoft.com</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Country:</p>
+                    <p class="content__mobile-info">Curaçao</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Status:</p>
+                    <p class="content__mobile-info">Active</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="content__mobile-items">
+                <article>
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Customer Name:</p>
+                    <p class="content__mobile-info">Jacob Jones</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Company:</p>
+                    <p class="content__mobile-info">Yahoo</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Phone Number:</p>
+                    <p class="content__mobile-info">(208) 555-0112</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Email:</p>
+                    <p class="content__mobile-info">jacob@yahoo.com</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Country:</p>
+                    <p class="content__mobile-info">Brazil</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Status:</p>
+                    <p class="content__mobile-info">Active</p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="content__mobile-items">
+                <article class="content__mobile__container">
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Customer Name:</p>
+                    <p class="content__mobile-info">Kristin Watson</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Company:</p>
+                    <p class="content__mobile-info">Facebook</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Phone Number:</p>
+                    <p class="content__mobile-info">(704) 555-0127</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Email:</p>
+                    <p class="content__mobile-info">kristin@facebook.com</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Country:</p>
+                    <p class="content__mobile-info">Åland Islands</p>
+                  </div>
+
+                  <div class="content__mobile-container">
+                    <p class="content__mobile-user">Status:</p>
+                    <p class="content__mobile-info">Inactive</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <div class="pagination-mobile">
+              <button
+                type="button"
+                class="pagination__arrow"
+                id="mobile-prev"
+                onclick="prevPage()"
+              ></button>
+              <button class="pagination__page" onclick="goToPage(1)">1</button>
+              <button class="pagination__page" onclick="goToPage(2)">2</button>
+              <button class="pagination__page" onclick="goToPage(3)">3</button>
+              <button class="pagination__page" onclick="goToPage(4)">4</button>
+              <span class="pagination__dots">...</span>
+              <button class="pagination__page" onclick="goToPage(40)">
+                40
+              </button>
+              <button
+                type="button"
+                class="pagination__arrow"
+                id="arrow-next"
+                onclick="nextPage()"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

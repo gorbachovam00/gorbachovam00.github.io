@@ -1,0 +1,29 @@
+:root {
+  --c-gray: #838383;
+  --c-black: #000000;
+  --c-text: #9197b3;
+  --c-info: #757575;
+  --c-white: white;
+  --c-background: #f9fbff;
+  --c-th: #b5b7c0;
+  --c-after: #ccc;
+  --c-td: #292d32;
+  --c-status: #16c098;
+  --c-active: #008767;
+  --c-background-active: #16c09861;
+  --c-inactive: #df0404;
+  --c-background-inactive: #ffc5c5;
+  --c-data: #b5b7c0;
+  --c-pagination: #f0f0f0;
+  --c-border: #ddd;
+  --c-blue: #5932ea;
+}
+
+$bp-mobile: 480px;
+$bp-extra-small: 576px;
+$bp-tablet: 768px;
+$bp-medium: 992px;
+$bp-desktop: 1024px;
+$bp-large: 1200px;
+$bp-desktop: 1280px;
+$bp-extra-large: 1400px;

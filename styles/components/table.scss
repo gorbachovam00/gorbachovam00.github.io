@@ -1,0 +1,38 @@
+.content {
+  &__head-title {
+    color: var(--c-th);
+    text-align: left;
+    white-space: nowrap;
+
+    &:last-child {
+      text-align: center;
+    }
+  }
+
+  &__head-row::after {
+    left: 0;
+    right: 0;
+    max-width: 968px;
+  }
+}
+
+tr td {
+  position: relative;
+}
+
+tr::after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  max-width: 888px;
+  height: 1px;
+  background-color: var(--c-after);
+  margin-top: 44px;
+}
+
+td {
+  color: var(--c-td);
+  max-width: 126px;
+  white-space: nowrap;
+}

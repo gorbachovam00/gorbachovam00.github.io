@@ -1,0 +1,114 @@
+.content__customers {
+  display: none;
+}
+@media (min-width: 992px) {
+  .content__customers {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 968px;
+    height: 812px;
+    padding: 30px 44px 40px 38px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-top: 51px;
+  }
+}
+.content__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 44px;
+}
+.content__table-body {
+  font-weight: 500;
+  letter-spacing: -1%;
+}
+.content__caption {
+  text-align: left;
+  margin-left: 30px;
+}
+@media (min-width: 992px) {
+  .content__caption {
+    margin-left: 0;
+  }
+}
+.content__caption-customer {
+  font-size: 22px;
+  font-weight: 600;
+}
+.content__caption-status {
+  color: var(--c-status);
+  margin-top: 7px;
+}
+.content__status {
+  width: 80px;
+  height: 29px;
+  padding-block: 4px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: center;
+}
+.content__status-active {
+  color: var(--c-active);
+  background-color: var(--c-background-active);
+}
+.content__status-inactive {
+  color: var(--c-inactive);
+  background-color: var(--c-background-inactive);
+}
+.content__datas {
+  color: var(--c-data);
+}
+.content__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 41px 0 51px 30px;
+}
+@media (min-width: 1200px) {
+  .content__title {
+    margin: 41px 0 51px;
+  }
+}
+.content__mobile-customers {
+  display: block;
+}
+@media (min-width: 992px) {
+  .content__mobile-customers {
+    display: none;
+  }
+}
+.content__mobile-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin-top: 70px;
+}
+.content__mobile-items {
+  background-color: var(--c-white);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+}
+.content__mobile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.content__mobile-info {
+  padding-bottom: 15px;
+}
+.content__mobile-user {
+  font-weight: 600;
+}/*# sourceMappingURL=content.css.map */

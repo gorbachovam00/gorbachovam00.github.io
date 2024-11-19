@@ -1,0 +1,31 @@
+.page {
+  font-family: "Poppins", sans-serif;
+  color: var(--c-black);
+  font-size: 14px;
+  font-weight: 400;
+  height: 100%;
+
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    background-color: var(--c-background);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__main {
+    width: 100%;
+    padding-bottom: 258px;
+    margin-top: 60px;
+
+    @media (min-width: 992px) {
+      margin-inline: 10%;
+    }
+    @media (min-width: 1200px) {
+      margin-inline: 71px 95px;
+    }
+  }
+}
